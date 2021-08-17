@@ -1,0 +1,126 @@
+
+/* Kích thước PC >= 1024px thì suy ra min-width mà nhỏ hơn thì không hiển thị */
+@media (min-width: 1024px) {
+    .pc {
+        display: block;
+    }
+}
+
+/* Table & Mobile */
+@media (max-width: 1023px) {
+    .btn {
+        padding: 15px 16px;
+    }
+
+    #nav .subnav a {
+        padding: 10px 12px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #contact .contact-info {
+        line-height: 2;
+    }
+
+    .socials-list {
+        font-size: 48px;
+    }
+
+    .contact-submit-btn {
+        font-size: 16px;
+    }
+    
+    #footer .socials-list a {
+        padding: 0 8px;
+    }
+
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+
+}
+
+
+/* TABLET >= 740px & < 1024px */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .contact-info {
+        line-height: 2;
+    }
+}
+
+/* Mobile < 740px suy ra lớn hơn 739 thì không hiển thị */
+@media (max-width: 739px) {
+    #header {
+        overflow: hidden;
+    }
+    
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px; /* Thẻ con thụt vào */
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    #content .members-list {
+        padding-top: 20px;
+    }
+
+    #content .member-item {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #content .section-content {
+        padding-bottom: 96px;
+    }
+
+    .s-full-width,
+    .s-col-full {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .mb-8 {
+        margin-bottom: 8px;
+        width: 100%;
+    }
+
+    #contact .contact-form {
+        margin-top: 32px;
+    }
+}
