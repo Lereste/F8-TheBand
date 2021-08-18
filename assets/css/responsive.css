@@ -1,13 +1,13 @@
 
 /* Kích thước PC >= 1024px thì suy ra min-width mà nhỏ hơn thì không hiển thị */
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
     .pc {
         display: block;
     }
 }
 
 /* Table & Mobile */
-@media (max-width: 1023px) {
+@media (max-width: 63.9375em) {
     .btn {
         padding: 15px 16px;
     }
@@ -46,14 +46,14 @@
 
 
 /* TABLET >= 740px & < 1024px */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
     .contact-info {
         line-height: 2;
     }
 }
 
 /* Mobile < 740px suy ra lớn hơn 739 thì không hiển thị */
-@media (max-width: 739px) {
+@media (max-width: 46.1875em) {
     #header {
         overflow: hidden;
     }
